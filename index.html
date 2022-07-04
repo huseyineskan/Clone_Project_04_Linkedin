@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akış | LinkedIn</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 pt-2">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#0A66C2" class="mercado-match" width="41" height="41" focusable="false">
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                  </svg>
+              </a>
+              <div class="input-group w-25">
+                <span class="input-group-text border-0" style="background-color: #eef3f8;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5F6163" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                  </svg>
+                </span>
+                <input type="text" class="form-control border-0" placeholder="Arama Yap" style="background-color: #eef3f8;">
+              </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ms-auto">
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#191919" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                    </svg>
+                    <a class="nav-link p-0 pb-2  active" aria-current="page" href="#">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                    </svg>
+                    <a class="nav-link p-0 pb-2 " aria-current="page" href="#">Ağım</a>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                    </svg>
+                    <a class="nav-link p-0 pb-2 " aria-current="page" href="#">İş İlanları</a>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                    </svg>
+                    <a class="nav-link p-0 pb-2 " aria-current="page" href="#">Mesajlaşma</a>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                    </svg>
+                    <a class="nav-link p-0 pb-2" aria-current="page" href="#">Bildirimler</a>
+                  </li>
+
+                  <li class="nav-item dropdown border-end pe-4">
+                    <a class="nav-link p-0 dropdown-toggle text-center d-inline-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-circle d-block m-auto" width="25" height="25" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="image">
+                        Ben</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <div class="row">
+                            <div class="col-4 px-4 pe-1">
+                                <img class="rounded-circle w-100" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="image">
+                            </div>
+                            <div class="col-8 d-flex ps-0 flex-column justify-content-center">
+                                <p class="fw-bold fs-5 m-0">Hüseyin ESKAN</p>
+                                <span class="fs-6">Freelancer Web Designer</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline-primary rounded-pill mt-2 d-block py-0 mx-1 fs-6" href="#">Profili Görüntüleyin</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="dropdown-item fw-bold fs-6">Hesap</li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Premium'u ücretsiz deneyin</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Ayarlar ve Gizlilik</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Yardım</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Dil</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="dropdown-item fw-bold fs-6">Yönet</li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Gönderi ve Faaliyetler</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">İş İlanı Yayınlama Hesabı</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li class="dropdown-item">
+                        <a class="nav-link p-0" href="#">Oturumu Kapat</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="navbar-toggler d-inline-block border-0" style="font-size:12px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                            <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                          </svg>
+                        <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">İş</a>    
+                        </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">İş</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="card">
+                                <div class="card-header fw-bold fs-6 bg-white py-3">
+                                    Diğer LinkedIn Ürünlerini Ziyaret Edin
+                                </div>
+                                <ul class="row card-body navbar-nav">
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-learning-@1-a" x1="7.18" y1="6.98" x2="13.8" y2="20.22" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#33aada"></stop>
+                                                    <stop offset="1" stop-color="#0091ca"></stop>
+                                                  </linearGradient>
+                                                  <linearGradient id="app-learning-@1-b" x1="12.96" y1="-17.55" x2="27.9" y2="24.33" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                                <path d="M20 30H8a1 1 0 01-1-1V11a1 1 0 011-1h12v20z" fill="url(#app-learning-@1-a)"></path>
+                                                <path d="M20 10h12a1 1 0 011 1v18a1 1 0 01-1 1H20V10z" fill="url(#app-learning-@1-b)"></path>
+                                                <path fill="#33aada" d="M9 19h8v2H9zM9 23h8v2H9zM9 15h8v2H9z"></path>
+                                                <path fill="#006097" d="M23 19h8v2h-8zM23 23h8v2h-8zM23 15h8v2h-8z"></path>
+                                                <path d="M17.41 15.25l7.46 4.52a.27.27 0 010 .46l-7.46 4.52a.27.27 0 01-.41-.23v-9a.27.27 0 01.41-.27z" fill="#fff"></path>
+                                              </svg>
+                                              <p>Learning</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-talent-insights-medium-a" x1="34.05" y1="44.47" x2="13.67" y2="19.5" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                                <path d="M25 6H10a1 1 0 00-1 1v25a1 1 0 001 1h20a1 1 0 001-1V12z" fill="#caedff"></path>
+                                                <path fill="#65c3e8" d="M25 6v6h6l-6-6z"></path>
+                                                <path d="M20 19a4 4 0 114-4 4 4 0 01-4 4zm3 2h-6v12h6zm8 11v-8h-5v9h4a1 1 0 001-1zm-17-5H9v5a1 1 0 001 1h4z" fill="url(#app-talent-insights-medium-a)"></path>
+                                              </svg>
+                                              <p>İçgörüler</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-jobs-posting-@1-a" x1="-6.68" y1="-1" x2="25.05" y2="26.36" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                                <path fill="none" stroke="#caedff" stroke-miterlimit="10" stroke-width="2" d="M20 8.67l-4 6.66M20 8.67l4 6.66"></path>
+                                                <rect x="8" y="14" width="24" height="16" rx="1" ry="1" fill="url(#app-jobs-posting-@1-a)"></rect>
+                                                <path fill="#65c3e8" d="M12 18h16v3H12z"></path>
+                                                <path fill="#33aada" d="M15 23h10v3H15z"></path>
+                                                <circle cx="20" cy="9" r="2" fill="#65c3e8"></circle>
+                                              </svg>
+                                              <p>İş İlanı<br>Yayınla</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-ads-@1-a" x1="34.78" y1="3.84" x2="14.66" y2="25.84" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                                <g fill="url(#app-ads-@1-a)">
+                                                  <path d="M20 11.88A8.13 8.13 0 1111.88 20 8.13 8.13 0 0120 11.88M20 9a11 11 0 1011 11A11 11 0 0020 9z"></path>
+                                                  <circle cx="20" cy="20" r="4"></circle>
+                                                </g>
+                                                <circle cx="20" cy="20" r="2" transform="rotate(-45 20.002 19.995)" fill="#33aada"></circle>
+                                                <path fill="#33aada" d="M24.246 12.932l2.829 2.828-5.657 5.657-2.828-2.829z"></path>
+                                                <path fill="#33aada" d="M29.19 16.46l-4.95-.7-.7-4.95 4.94-4.95L29 11l5.14.52-4.95 4.94z"></path>
+                                              </svg>
+                                              <p>Reklam Ver</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-sales-navigator-@1-a" x1="40.53" y1="-53.4" x2="20.23" y2="19.17" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                </defs>
+                                                <circle cx="20" cy="20" r="14" fill="url(#app-sales-navigator-@1-a)"></circle>
+                                                <path d="M17.17 17.17L27.42 12a.4.4 0 01.18 0 .39.39 0 01.4.39.42.42 0 010 .19l-5.17 10.25z" fill="#fff"></path>
+                                                <path d="M17.17 17.17L12 27.42a.42.42 0 000 .19.39.39 0 00.37.38.45.45 0 00.21 0l10.25-5.12z" fill="#98d8f4"></path>
+                                                <circle cx="20" cy="20" r="4" fill="#fff"></circle>
+                                                <circle cx="20" cy="20" r="2" fill="#0073b1"></circle>
+                                              </svg>
+                                              <p>Adayları Bulun</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <defs>
+                                                  <linearGradient id="app-groups-@1-b" x1="1.84" y1="-24.59" x2="20.66" y2="25.05" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#665ed0"></stop>
+                                                    <stop offset="1" stop-color="#0073b1"></stop>
+                                                  </linearGradient>
+                                                  <clipPath id="app-groups-@1-a">
+                                                    <path d="M18.17 9.15a11 11 0 00-7.76 16.23l-2 5.6a.47.47 0 00.63.59l5.21-2.23a11 11 0 103.92-20.19z" fill="none"></path>
+                                                  </clipPath>
+                                                </defs>
+                                                <path d="M18.17 9.15a11 11 0 00-7.76 16.23l-2 5.6a.47.47 0 00.63.59l5.21-2.23a11 11 0 103.92-20.19z" fill="#caedff"></path>
+                                                <circle cx="29" cy="16" r="3" fill="#0091ca"></circle>
+                                                <circle cx="11" cy="16" r="3" fill="#0091ca"></circle>
+                                                <g clip-path="url(#app-groups-@1-a)">
+                                                  <path d="M20 18a4 4 0 114-4 4 4 0 01-4 4zm3 2h-6v16h6V20z" fill="url(#app-groups-@1-b)"></path>
+                                                  <path fill="#0091ca" d="M26 21h6v14h-6zM8 21h6v14H8z"></path>
+                                                </g>
+                                              </svg>
+                                              <p>Gruplar</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <circle cx="20" cy="12" r="4" fill="#0073b1"></circle>
+                                                <path d="M31.88 13.46L16.17 29.17 18 31a1.37 1.37 0 002 0l14.71-14.71a1.13 1.13 0 00.29-.8.89.89 0 00-.29-.61l-1.41-1.42a1 1 0 00-1.42 0z" fill="#0091ca"></path>
+                                                <path d="M21.83 29.17L20 31a1.35 1.35 0 01-1 .4 1.36 1.36 0 01-1-.4l-8.71-8.71a1 1 0 010-1.41l1.41-1.41a1.07 1.07 0 01.76-.29.94.94 0 01.65.29z" fill="#33aada" opacity=".8"></path>
+                                                <path fill="#0073b1" d="M19 26.34l4-4V18h-6v6.34l2 2z"></path>
+                                              </svg>
+                                              <p>Hizmetler Mağazası</p>
+                                        </a>
+                                    </li>
+                                    <li class="col-3 text-center">
+                                        <a class="nav-link p-0" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" data-supported-dps="40x40" width="40" height="40" focusable="false">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#0084bf" d="M7 27h26v2H7z"></path>
+                                                <path d="M31 32H9c-1.1 0-2-.9-2-2h26c0 1.1-.9 2-2 2z" fill-rule="evenodd" clip-rule="evenodd" fill="#33aada"></path>
+                                                <linearGradient id="app-salary-@1-a" gradientUnits="userSpaceOnUse" x1="21.826" y1="19.121" x2="16.728" y2="13.2">
+                                                  <stop offset="0" stop-color="#1074af"></stop>
+                                                  <stop offset="1" stop-color="#5251c0"></stop>
+                                                </linearGradient>
+                                                <circle cx="20" cy="17" r="5" fill-rule="evenodd" clip-rule="evenodd" fill="url(#app-salary-@1-a)"></circle>
+                                                <linearGradient id="app-salary-@1-b" gradientUnits="userSpaceOnUse" x1="25.44" y1="23.318" x2="10.254" y2="5.681">
+                                                  <stop offset="0" stop-color="#1074af"></stop>
+                                                  <stop offset="1" stop-color="#5251c0"></stop>
+                                                </linearGradient>
+                                                <path d="M32 8H8c-.6 0-1 .4-1 1v16c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V9c0-.6-.4-1-1-1zm-1 12c-1.9.7-3.3 2.2-4 4H13c-.7-1.9-2.2-3.3-4-4v-6c1.9-.7 3.3-2.2 4-4h14c.7 1.9 2.2 3.3 4 4v6z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#app-salary-@1-b)"></path>
+                                                <g clip-rule="evenodd">
+                                                  <path d="M16.5 20.5c2 2 5.1 2 7.1 0s2-5.1 0-7.1l-7.1 7.1z" fill-rule="evenodd" fill="#0084bf"></path>
+                                                  <path fill="none" d="M20 9.929l7.071 7.07L20 24.072 12.929 17z"></path>
+                                                </g>
+                                              </svg>
+                                              <p>Maaş</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                                <ul class="list-group mt-4">
+                                    <li class="list-group-item fs-6 fw-bold py-3">
+                                        LinkedIn Ticari Hizmetler
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Yetenek Çözümleri</p>
+                                            <span>Yenekleri bulun, onlarn ilgisini çekin ve işe alın</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Satış Çözümleri</p>
+                                            <span>Satış fırsatlarının kapısını açın</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Ücretsiz iş ilanı yayınla</p>
+                                            <span>İş ilanlarınızı kalifiye adayların önüne serin</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Pazarlama Çözümleri</p>
+                                            <span>İşinizi büyütün ve yeni müşteriler edinin</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Eğitim Çözümleri</p>
+                                            <span>Organizasyonunuzda yetenekleri geliştirin</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item border-top">
+                                        <a class="nav-link p-0" href="#">
+                                            <p class="fw-bold m-0 p-0 fs-6 text-dark">Şirket Sayfası Oluşturun <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                                <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                                              </svg></p>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                        </div>
+                      </div>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-none text-center p-0" style="color:#915907; line-height: 22px; font-size: 15px;" href="#">Premium'u ücretsiz<br>deneyin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://media-exp2.licdn.com/dms/image/C4D16AQGeDXrsWoP6sg/profile-displaybackgroundimage-shrink_200_800/0/1650894320602?e=1662595200&v=beta&t=iXZ8tu2-C9DOQeI2SpwAvR4YYYoRuVQxtDIM8C6zAHw" class="card-img-top" alt="image">
+                        <div class="card-body text-center px-1">
+                          <img class="rounded-circle" style="height: 72px; margin-top: -60px;" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="...">
+                          <h5 class="card-title m-0 mt-3"><a class="text-reset text-decoration-none" href="#">Hüseyin ESKAN</a></h5>
+                          <p class="card-text m-0 fs-12 text-secondary">Freelance Web Designer</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item px-1 border-0 d-flex justify-content-between align-items-start fs-12">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">bağlantı</div>
+                                İletişim ağınızı büyütün
+                              </div>
+                              <span class="badge text-primary fs-12">69</span>
+                            </li>
+                            <li class="list-group-item px-1 border-0 d-flex justify-content-between align-items-start fs-12">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Kişi profilinizi görüntüledi</div>
+                              </div>
+                              <span class="badge text-primary fs-12">13</span>
+                            </li>
+                            <li class="list-group-item px-1 border-0 border-top d-flex justify-content-between align-items-start fs-12">
+                                <div class="ms-2 me-auto">
+                                  <a class="text-reset text-decoration-none" href="#">
+                                      Özel araç ve içgörülere erişin
+                                      <div class="fw-bold">Premium'u ücretsiz deneyin</div>
+                                  </a>
+                                </div>
+                              </li>
+                            <li class="list-group-item px-1 border-0 border-top d-flex justify-content-between align-items-start fs-12">
+                                <div class="ms-2 me-auto">
+                                  <a class="text-reset text-decoration-none" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" width="16" height="16" focusable="false">
+                                        <path d="M12 1H4a1 1 0 00-1 1v13.64l5-3.36 5 3.36V2a1 1 0 00-1-1z"></path>
+                                      </svg> Ögelerim
+                                  </a>
+                                </div>
+                              </li>
+                        </ul>
+                    </div>
+                    <div class="card mt-3 sticky-top">
+                        <div class="card-body">
+                          <h5 class="card-title fs-14">Yeni</h5>
+                          <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M2 2v9a3 3 0 003 3h6a3 3 0 003-3V2zm8.5 1.5a1 1 0 11-1 1 1 1 0 011-1zm-5 0a1 1 0 11-1 1 1 1 0 011-1zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V7h8z"></path>
+                                  </svg>
+                                  React Native EU 2021 - Virtual Edition
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                                    <circle cx="8" cy="4" r="2"></circle>
+                                    <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                                    <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                                    <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                                </svg>
+                                Bilişim Personeli
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                                  </svg>
+                                mobileteknoloji
+                            </a>
+                          </div>
+                          <div class="list-group mt-3">
+                            <a href="#" class="text-decoration-none border-0 px-0 py-1 fs-14">
+                                Gruplar
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                                    <circle cx="8" cy="4" r="2"></circle>
+                                    <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                                    <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                                    <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                                </svg>
+                                Bilişim Personeli
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="transparent" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                                    <circle cx="8" cy="4" r="2"></circle>
+                                    <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                                    <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                                    <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                                </svg>
+                                Tümünü Gör
+                            </a>
+                          </div>
+                          <div class="mt-3 d-flex justify-content-between align-items-center">
+                            <a href="#" class="text-decoration-none border-0 px-0 py-1 fs-14">
+                                Etkinlikler
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                              </svg>
+                          </div>
+                          <div class="mt-3">
+                            <a href="#" class="text-decoration-none border-0 px-0 py-1 fs-14">
+                                Takip edilen hashtagler
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#5E5E5E" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+                                  </svg>
+                                mobileteknoloji
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-1 fs-14">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="transparent" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+                                    <circle cx="8" cy="4" r="2"></circle>
+                                    <circle cx="12.5" cy="5.5" r="1.5"></circle>
+                                    <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+                                    <circle cx="3.5" cy="5.5" r="1.5"></circle>
+                                </svg>
+                                Tümünü Gör
+                            </a>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="list-group-item list-group-item-action fs-16 py-2 text-center">
+                                Daha fazla keşfet
+                            </a>
+                          </div>
+                      </div>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="row card py-3">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <img class="rounded-circle" style="width: 48px;" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="image">
+                                <input type="text" class="form-control ms-2 rounded-pill" placeholder="Gönderi başlat">
+                              </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a class="text-reset text-decoration-none hoverbg p-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#378FE9" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                                        </svg>
+                                        Fotoğraf
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="text-reset text-decoration-none hoverbg p-2 rounded-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#5F9B41" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+                                          </svg>
+                                        Video
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="text-reset text-decoration-none hoverbg p-2 rounded-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#C37D16" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+                                          </svg>
+                                        Etkinlik
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="text-reset text-decoration-none hoverbg p-2 rounded-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#E16745" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+                                          </svg>
+                                        Yazı yaz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row card mt-3 py-2 pb-0">
+                        <div class="col-12 d-flex">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Hüseyin ESKAN</h5>
+                                <p class="fs-12 m-0">Freelancer Web Designer</p>
+                                <p class="fs-12 m-0">1 saat önce</p>
+                            </div>
+                            <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                              </svg>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <p class="fs-14" style="line-height: 20px;">Bu bir clone proje çalışmasıdır. LinkedIn web sitesini bootstrap ile klonluyoruz. Bootstrap kısa sürede proje çıkarmak için güzel bir kütüphane</p>
+                            <p>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#bootstrap</a>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#linkedin</a>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#cloneproject</a>
+                            </p>
+                        </div>
+                        <div class="col-12 border-bottom pb-2">
+                            <img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/3wqhxqtk2l554o70ur3kessf1" alt="img">
+                            <a href="#" class="fs-12 text-secondary text-decoration-none"> Birisi ve 258 diğer kişi</a>
+                            <a href="#" class="fs-12 text-secondary text-decoration-none float-end"> 23 Yorum</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row py-1">
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                                          </svg> Beğen
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                                          </svg>
+                                          </svg> Yorum Yap
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+                                          </svg> Paylaş
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                          </svg> Gönder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card mt-3 py-2 pb-0">
+                        <div class="col-12 d-flex">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4D03AQFpLXDlU8A7Lw/profile-displayphoto-shrink_100_100/0/1635087394371?e=1662595200&v=beta&t=efsMnmrX5FjM5JOXabnvw78OUWP55ulDNkOM3gVw7dg" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Simon Høiberg</h5>
+                                <p class="fs-12 m-0">Startup CEO ‧ Building software for creators & marketers</p>
+                                <p class="fs-12 m-0">5 gün • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                  </svg></p>
+                            </div>
+                            <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                              </svg>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <p class="fs-14" style="line-height: 20px;">- I've made +$300K/year as a freelancer.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I built a SaaS that's making $20K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I wrote two E-Books that's making $4K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I'm doing a YouTube channel that's making $6K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">The journey has been long and hard.<br>
+                                                                        But it all leads back to learning how to code 🚀</p>                 
+                        </div>
+                        <div class="col-12 border-bottom pb-2">
+                            <img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/3wqhxqtk2l554o70ur3kessf1" alt="img">
+                            <a href="#" class="fs-12 text-secondary text-decoration-none"> Birisi ve 258 diğer kişi</a>
+                            <a href="#" class="fs-12 text-secondary text-decoration-none float-end">49 yorum • 5 paylaşım</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row py-1">
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                                          </svg> Beğen
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                                          </svg>
+                                          </svg> Yorum Yap
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+                                          </svg> Paylaş
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                          </svg> Gönder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card mt-3 py-2 pb-0">
+                        <div class="col-12 d-flex">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Hüseyin ESKAN</h5>
+                                <p class="fs-12 m-0">Freelancer Web Designer</p>
+                                <p class="fs-12 m-0">1 saat önce</p>
+                            </div>
+                            <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                              </svg>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <p class="fs-14" style="line-height: 20px;">Bu bir clone proje çalışmasıdır. LinkedIn web sitesini bootstrap ile klonluyoruz. Bootstrap kısa sürede proje çıkarmak için güzel bir kütüphane</p>
+                            <p>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#bootstrap</a>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#linkedin</a>
+                                <a class="fs-14 fw-bold text-decoration-none" href="#">#cloneproject</a>
+                            </p>
+                        </div>
+                        <div class="col-12 border-bottom pb-2">
+                            <img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/3wqhxqtk2l554o70ur3kessf1" alt="img">
+                            <a href="#" class="fs-12 text-secondary text-decoration-none"> Birisi ve 258 diğer kişi</a>
+                            <a href="#" class="fs-12 text-secondary text-decoration-none float-end"> 23 Yorum</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row py-1">
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                                          </svg> Beğen
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                                          </svg>
+                                          </svg> Yorum Yap
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+                                          </svg> Paylaş
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                          </svg> Gönder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card mt-3 py-2 pb-0">
+                        <div class="col-12 d-flex">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4D03AQFpLXDlU8A7Lw/profile-displayphoto-shrink_100_100/0/1635087394371?e=1662595200&v=beta&t=efsMnmrX5FjM5JOXabnvw78OUWP55ulDNkOM3gVw7dg" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Simon Høiberg</h5>
+                                <p class="fs-12 m-0">Startup CEO ‧ Building software for creators & marketers</p>
+                                <p class="fs-12 m-0">5 gün • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                  </svg></p>
+                            </div>
+                            <svg class="ms-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                              </svg>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <p class="fs-14" style="line-height: 20px;">- I've made +$300K/year as a freelancer.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I built a SaaS that's making $20K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I wrote two E-Books that's making $4K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">- I'm doing a YouTube channel that's making $6K/month.</p>
+                            <p class="fs-14" style="line-height: 20px;">The journey has been long and hard.<br>
+                                                                        But it all leads back to learning how to code 🚀</p>                 
+                        </div>
+                        <div class="col-12 border-bottom pb-2">
+                            <img src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="img">
+                            <img style="margin-left:-10px" src="https://static-exp1.licdn.com/sc/h/3wqhxqtk2l554o70ur3kessf1" alt="img">
+                            <a href="#" class="fs-12 text-secondary text-decoration-none"> Birisi ve 258 diğer kişi</a>
+                            <a href="#" class="fs-12 text-secondary text-decoration-none float-end">49 yorum • 5 paylaşım</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row py-1">
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                                          </svg> Beğen
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                                          </svg>
+                                          </svg> Yorum Yap
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"></path>
+                                          </svg> Paylaş
+                                    </a>
+                                </div>
+                                <div class="col py-3 hoverbg rounded-3">
+                                    <a class="d-flex justify-content-center align-items-center text-decoration-none text-secondary" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                          </svg> Gönder
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ms-2">
+                    <div class="row card py-2 pb-0">
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <h5>Akışınıza ekleyin </h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#666666" class="mercado-match" width="16" height="16" focusable="false">
+                                <path d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"></path>
+                              </svg>
+                        </div>
+                        <div class="col-12 d-flex mt-3">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C560BAQEU8nrI0cJ1Lw/company-logo_100_100/0/1531606303227?e=1665014400&v=beta&t=vbhEgsyYTEhf12f-uA3xzUrdA49oI2iKhgIeQUY5XiE" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Gıda Dedektifi</h5>
+                                <p class="fs-12 m-0">Şirket - Kâr Amacı Gütmeyen Organizasyon Yönetimi</p>
+                                <a href="#" class="btn btn-outline-secondary rounded-pill py-1 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#666666" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                                  </svg> Takip Et</a>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex mt-3">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4E03AQFqWtcCPHaEBw/profile-displayphoto-shrink_100_100/0/1645433123936?e=1662595200&v=beta&t=UigUC5UTg2hS4wiP1BGwos_1aHKpAsBRmN-33sTM8Q8" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Can Değer</h5>
+                                <p class="fs-12 m-0">Sr. Security Consultant / Architect / Pre Sales Engineer / Trainer</p>
+                                <a href="#" class="btn btn-outline-secondary rounded-pill py-1 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#666666" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                                  </svg> Takip Et</a>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex mt-3">
+                            <img class="rounded-circle" width="48" height="48" src="https://media-exp2.licdn.com/dms/image/C4D03AQEpavAh8rVOiQ/profile-displayphoto-shrink_200_200/0/1516854255554?e=1662595200&v=beta&t=KnxKb13fSzAncOV81X3cI_IZYmLpoYkr3MZdUWjKFjA" alt="">
+                            <div class="ms-2">
+                                <h5 class="card-title fs-14 m-0">Hakkı Alkan</h5>
+                                <p class="fs-12 m-0">Owner, ShiftDelete.Net İşbirliği için: hakkialkan@socialand.com.tr</p>
+                                <a href="#" class="btn btn-outline-secondary rounded-pill py-1 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#666666" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                                  </svg> Takip Et</a>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <a class="text-secondary text-decoration-none hoverbg" href="#">Tüm tavsiyeleri görüntüle <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="mercado-match" data-supported-dps="16x16" fill="#8C8C8C" width="16" height="16" focusable="false">
+                                <path d="M11.45 3L15 8l-3.55 5H9l2.84-4H2V7h9.84L9 3z"></path>
+                              </svg></a>
+                        </div>
+                    </div>
+                    <div class="row card sticky-top mt-3">
+                        <div class="card-title text-end fs-14 pt-1">
+                            Reklam <svg viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><title>overflow-web-small</title><g><g><path d="M3,9.5A1.5,1.5,0,1,1,4.5,8,1.5,1.5,0,0,1,3,9.5ZM11.5,8A1.5,1.5,0,1,0,13,6.5,1.5,1.5,0,0,0,11.5,8Zm-5,0A1.5,1.5,0,1,0,8,6.5,1.5,1.5,0,0,0,6.5,8Z"></path></g></g></svg>
+                        </div>
+                        <div class="card-body pt-0 text-center">
+                            <p class="text-center text-secondary fs-12">İş ilanları, haberler ve daha fazlası ile ilgili en yeni gelişmelerden haberdar olun</p>
+                            <div class="text-center">
+                                <img class="rounded-circle" style="width: 70px;" src="https://media-exp2.licdn.com/dms/image/C4D03AQE6wUMYh1e5XA/profile-displayphoto-shrink_100_100/0/1599714473770?e=1662595200&v=beta&t=t1n2ucud-9UHbxwertrl_KKGiPucOEnCkSwYyaqaiIo" alt="image">
+                                <img class="rounded-circle" style="width: 70px;" src="https://media-exp2.licdn.com/dms/image/C4E0BAQFC-wGW2UwMIQ/company-logo_100_100/0/1593590505853?e=1665014400&v=beta&t=f7ftBce6Lt9BbIFBEHAOZnY2ey043BRUUMCH1gb4I_c" alt="image">
+                            </div>
+                            <p class="text-center mt-3">Hüseyin, <b>Unilever</b> şirketindeki fırsatlardan haberdar olun</p>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-3">Takip Edin</a>
+                        </div>
+                    </div>
+                    <div class="footer sticky-top">
+                        <a href="#">Hakkında</a>
+                        <a href="#">Erişilebilirlik</a>
+                        <a href="#">Yardım Merkezi</a>
+                        <a href="#">Gizlilik ve Koşullar <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                          </svg></a>
+                        <a href="#">Reklam Tercihleri</a>
+                        <a href="#">Reklam</a>
+                        <a href="#">Ticari Hizmetler <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                          </svg>
+                        </a>
+                        <a href="#">LinkedIn uygulamasını yükle</a>
+                        <a href="#">Daha Fazla</a>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="#0A66C2" class="mercado-match" width="56" height="14" focusable="false">
+                            <g>
+                              <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+                            </g>
+                          </svg> LinkedIn Corporation © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
