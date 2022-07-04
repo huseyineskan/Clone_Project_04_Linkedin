@@ -2,4 +2,4 @@
 
 LinkedIn Clone Project with bootstrap
 
-Loading...
+![LinkedIn Clone](https://github.com/huseyineskan/linkedin_clone/blob/main/demo.png?raw=true)
